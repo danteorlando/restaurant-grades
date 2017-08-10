@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <title>Restaurant Grades</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <style>
+      #map {
+        width: 800px;
+        height: 600px;
+        background-color: #CCC;
+      }
+      .info-window {
+        max-width: 200px;
+      }
+      #search {
+        width: 800px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Grades</h1>
+
+      <p>Check the health department grade of nearby restaurants before you eat there.</p>
+<!--
+      <form id="search" class="input-group" method="POST">
+        <input name="q" type="text" class="query form-control" placeholder="What kind of food do you like?" />
+      </form>
+-->
+      <ul id="map"></ul>
+
+      <!--
+      <p>Source code at <a href="https://github.com/chrismetcalf/shady-eats">https://github.com/chrismetcalf/shady-eats</a>.</p>
+    -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKfJ2l6BeuB6Nb8DufTMCHiJIj7J2l5pI"></script>
+    <script src="./js/grades.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>
