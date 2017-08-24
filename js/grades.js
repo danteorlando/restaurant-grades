@@ -23,7 +23,7 @@ $(function() {
 
   google.maps.event.addListener(map, 'dragstart', function(event) {
     clearMarkers();
-  });  
+  });
 
   function drawMarkers(firstTime) {
 
@@ -36,7 +36,7 @@ $(function() {
     function error(err) {
       console.warn(`ERROR(${err.code}): ${err.message}`);
     };
-    
+
 
     navigator.geolocation.getCurrentPosition(function(pos) {
       /*
@@ -67,7 +67,7 @@ $(function() {
           url: "https://data.acgov.org/resource/y2kh-zbwg.json",
           type: "GET",
           data: {
-            "$where": "within_circle(location_1, " + currentLat + ", " + currentLon + ", 500)",  
+            "$where": "within_circle(location_1, " + currentLat + ", " + currentLon + ", 500)",
             "$limit" : 5000,
             "$$app_token" : "W7RuQngZU2jChxMALUvtjlmEa"
           }
@@ -99,9 +99,8 @@ $(function() {
       });
     }, error, options);
 }
-  
-drawMarkers(true);
 
+drawMarkers(true);
 /*
   $("#search").submit(function(event) {
     event.preventDefault();
